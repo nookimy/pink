@@ -6,56 +6,62 @@
   </head>
   <body>
 
-  	<header class="page-header">
-  		<a class="page-header__logo" href="#">
-  			<img class="page-header__logo-image" src="img.png" width="75" height="22" alt="Логотип Пинк">
-  		</a>
-  		<nav class="main-nav"><!-- независимый блок -->
-  			<button class="main-nav__toggle" type="button">Закрыть меню</button>
-  			<ul class="main-nav__list  site-list"><!-- миксуем -->
-  				<li class="site-list__item site-list__item--active">
-  					<a>Главная</a>
-  				</li>
-  				<li class="site-list__item">
-  					<a href="#">Фотографии</a>
-  				</li>
-  				<li class="site-list__item">
-  					<a href="#">Конкурс</a>
-  				</li>
-  				<li class="site-list__item">
-  					<a href="#">HTML Academy</a>
-  				</li>
-  			</ul>
-  		</nav>
-  	</header>
+    <header class="page-header">
 
-  	<main class="page-main">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="http://placehold.it/75x22" width="75" height="22" alt="Логотип Пинк">
+      </a>
 
-      <h1 class="visually-hidden">Пинк</h1>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list  site-list">
+            <li class="site-list__item site-list__item--active">
+              <a>Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
-      <section class="app-download">
-        <img class="app-download__img" src="img.png" width="auto" height="463px" alt="Приложение Пинк"><!--но возможно лучше вставить фоновой картинкой-->
-        <a class="app-download__button button" href="#">Скачать приложение</a>
-        <ul class="app-download__os-list">
-          <li class="app-download__os-item app-download__os-item--apple">
-            <a href="#">Скачать для iOS</a>
-          </li>
-          <li class="app-download__os-item app-download__os-item--android">
-            <a href="#">Скачать для Android</a>
-          </li>
-          <li class="app-download__os-item app-download__os-item--windows">
-            <a href="#">Скачать для Windows</a>
-          </li>
+    </header>
+
+    <main class="page-main">
+
+      <h1 class="visually-hidden">Приложение Пинк</h1>
+
+      <section class="intro">
+        <img class="intro__image" src="http://placehold.it/320x285" width="320" height="462" alt="iPhone в руке">
+      </section>
+
+      <section class="download">
+        <h2 class="visually-hidden">Скачать приложение</h2>
+        <a class="download__button button" href="#">Скачать приложение</a>
+        <ul class="download__list">
+          <li class="download__item download__item--apple"><a href="#">Скачать для iOS</a></li>
+          <li class="download__item download__item--android"><a href="#">Скачать для Android</a></li>
+          <li class="download__item download__item--windows"><a href="#">Скачать для Windows</a></li>
         </ul>
-        <p class="app-download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
 
       <section class="features">
+
         <h2 class="visually-hidden">Преимущества</h2>
-        <div class="features__titles">
-          <span class="features__title">Устали от серости мегаполиса?</span>
-          <span class="features__title">Нам есть, что вам предложить!</span>
+
+        <div class="features__header">
+          <p class="features__title">Устали от серости мегаполиса?</p>
+          <p class="features__title">Нам есть, что вам предложить!</p>
         </div>
+
         <ul class="features__list">
           <li class="features__item">
             <h3 class="features__title">Поднимает настроение</h3>
@@ -70,91 +76,12 @@
             <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
-        <!--Телефон фоновой картинкой-->
-      </section>
 
-      <section class="review">
-        <h2 class="visually-hidden">Отзывы</h2>
-        <ul class="review__list slider__list">
-          <li class="review__item slider__item">
-            <cite class="review__author">Николай Петров</cite>
-            <blockquote class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
-          </li>
-          <li class="review__item">
-            <cite class="review__author slider__item">Иван Иванов</cite>
-            <blockquote class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
-          </li>
-          <li class="review__item">
-            <cite class="review__author slider__item">Михаил Сидоров</cite>
-            <blockquote class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
-          </li>
-        </ul>
-        <p class="review__toggles slider__toggles">
-          <button class="slider__toggle" type="button">1</button>
-          <button class="slider__toggle" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
-        </p>
-      </section>
+        <img src="http://placehold.it/155x275" width="155" height="275" alt="Изображение телефона с запущенным приложением">
 
-      <section class="tariffs">
-        <h2 class="visually-hidden">Тарифы</h2>
-        <table class="tariffs__table">
-          <tbody>
-            <tr>
-              <th>
-                <h3>Тариф 1</h3>
-                <span>1,99 USD</span>
-              </th>
-              <th>
-                <h3>Стандарт</h3>
-                <span>3,99 USD</span>
-              </th>
-              <th>
-                <h3>Тариф 3</h3>
-                <span>5,99 USD</span>
-              </th>
-            </tr>
-            <tr>
-              <td>Розовый фильтр</td>
-              <td>Розовый фильтр</td>
-              <td>Розовый фильтр</td>
-            </tr>
-            <tr>
-              <td>Смайлики</td>
-              <td>Смайлики</td>
-              <td>Смайлики</td>
-            </tr>
-          </tbody>
-        </table>
-        <p class="review__toggles slider__toggles">
-          <button class="slider__toggle" type="button">1</button>
-          <button class="slider__toggle" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
-        </p>
-      </section>
-
-      <section class="contacts">
-        <h2 class="visually-hidden">Контакты</h2>
-        <div class="contacts__info">
-          <span class="contacts__title">Остались вопросы? Свяжитесь с нами!</span>
-          <div class="contacts__wrapper">
-            <strong class="contacts__info-title">Звоните</strong>
-            <a class="contacts__info-data" href="tel:+78125556666">+7 (812) 555-66-66</a>
-          </div>
-          <div class="contacts__wrapper">
-            <strong class="contacts__info-title">Пишите</strong>
-            <a class="contacts__info-data" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </div>
-        </div>
-        <div class="contacts__map">
-          <img class="contacts__map-image" src="map.jpg" width="auto" height="200" alt="Карта">
-        </div>
       </section>
 
     </main>
 
-  	<footer>
-
-  	</footer>
   </body>
 </html>
