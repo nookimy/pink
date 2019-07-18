@@ -34,90 +34,98 @@
 
     <main class="page-main">
 
-      <h1 class="page-main__title">Фотографии пользователей</h1>
+      <section class="intro">
+        <div class="intro__wrapper intro__wrapper--header">
+          <h1 class="intro__title">Фотографии пользователей</h1>
+        </div>
+      </section>
 
       <section class="gallery">
         <p class="gallery__intro">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
 
-        <ul class="gallery__list">
-          <li class="gallery-item">
-            <a class="gallery-item__link" href="http://placehold.it/320x140">
-              <img class="gallery-item__image gallery-item__image--panorama" src="http://placehold.it/320x137" width="320" height="137" alt="Панорама дня">
-            </a>
-            <div class="gallery-item__wrapper">
-              <h2 class="gallery-item__header">Анна</h2>
-              <time class="gallery-item__date" datetime="2019-07-14">(5 минут назад)</time>
-              <p class="gallery-item__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-              <span class="gallery-item__like">Нравится: 215</span>
-            </div>
-          </li>
-          <li class="gallery-item">
-            <a class="gallery-item__link" href="http://placehold.it/320x140">
-              <img class="gallery-item__image" src="http://placehold.it/280x180" width="280" height="180" alt="Фотография пользователя">
-            </a>
-            <div class="gallery-item__wrapper">
-              <h2 class="gallery-item__header">Левон</h2>
-              <time class="gallery-item__date" datetime="2019-07-14">(5 часов назад)</time>
-              <p class="gallery-item__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-              <span class="gallery-item__like">Нравится: 356</span>
-            </div>
-          </li>
-          <li class="gallery-item">
-            <a class="gallery-item__link" href="http://placehold.it/320x140">
-              <img class="gallery-item__image" src="http://placehold.it/280x180" width="280" height="180" alt="Фотография пользователя">
-            </a>
-            <div class="gallery-item__wrapper">
-              <h2 class="gallery-item__header">Антон</h2>
-              <time class="gallery-item__date" datetime="2019-07-14">(12 часов назад)</time>
-              <p class="gallery-item__text">Соседи будут рады!</p>
-              <span class="gallery-item__like">Нравится: 666</span>
-            </div>
-          </li>
-          <li class="gallery-item">
-            <a class="gallery-item__link" href="http://placehold.it/320x140">
-              <img class="gallery-item__image" src="http://placehold.it/280x180" width="280" height="180" alt="Фотография пользователя">
-            </a>
-            <div class="gallery-item__wrapper">
-              <h2 class="gallery-item__header">Борис</h2>
-              <time class="gallery-item__date" datetime="2019-07-14">(20 часов назад)</time>
-              <p class="gallery-item__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-              <span class="gallery-item__like">Нравится: 215</span>
-            </div>
-          </li>
-          <li class="gallery-item">
-            <a class="gallery-item__link" href="http://placehold.it/320x140">
-              <img class="gallery-item__image" src="http://placehold.it/280x180" width="280" height="180" alt="Фотография пользователя">
-            </a>
-            <div class="gallery-item__wrapper">
-              <h2 class="gallery-item__header">Сергей</h2>
-              <time class="gallery-item__date" datetime="2019-07-14">(25 часов назад)</time>
-              <p class="gallery-item__text">Самая кубанская в мире!</p>
-              <span class="gallery-item__like">Нравится: 4</span>
-            </div>
-          </li>
-          <li class="gallery-item">
-            <a class="gallery-item__link" href="http://placehold.it/320x140">
-              <img class="gallery-item__image" src="http://placehold.it/280x180" width="280" height="180" alt="Фотография пользователя">
-            </a>
-            <div class="gallery-item__wrapper">
-              <h2 class="gallery-item__header">Максим</h2>
-              <time class="gallery-item__date" datetime="2019-07-14">(40 часов назад)</time>
-              <p class="gallery-item__text">Где снег-то?</p>
-              <span class="gallery-item__like">Нравится: 150</span>
-            </div>
-          </li>
-          <li class="gallery-item">
-            <a class="gallery-item__link" href="http://placehold.it/320x140">
-              <img class="gallery-item__image" src="http://placehold.it/280x180" width="280" height="180" alt="Фотография пользователя">
-            </a>
-            <div class="gallery-item__wrapper">
-              <h2 class="gallery-item__header">Надежда</h2>
-              <time class="gallery-item__date" datetime="2019-07-14">(45 часов назад)</time>
-              <p class="gallery-item__text">Всем GM и взаимные лайки!</p>
-              <span class="gallery-item__like">Нравится: 2560</span>
-            </div>
-          </li>
-        </ul>
+        <div class="gallery__wrapper">
+          <ul class="gallery__list">
+            <li class="gallery-item">
+              <a class="gallery-item__link" href="http://placehold.it/320x140">
+                <img class="gallery-item__image gallery-item__image--panorama" src="http://placehold.it/320x137" width="320" height="137" alt="Панорама дня">
+              </a>
+              <div class="gallery-item__wrapper">
+                <h2 class="gallery-item__header">Анна</h2>
+                <time class="gallery-item__date" datetime="2019-07-14">(5 минут назад)</time>
+                <p class="gallery-item__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+                <span class="gallery-item__like">Нравится: 215</span>
+              </div>
+            </li>
+            <li class="gallery-item">
+              <a class="gallery-item__link" href="http://placehold.it/320x140">
+                <img class="gallery-item__image" src="http://placehold.it/280x180" width="280" height="180" alt="Фотография пользователя">
+              </a>
+              <div class="gallery-item__wrapper">
+                <h2 class="gallery-item__header">Левон</h2>
+                <time class="gallery-item__date" datetime="2019-07-14">(5 часов назад)</time>
+                <p class="gallery-item__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                <span class="gallery-item__like">Нравится: 356</span>
+              </div>
+            </li>
+            <li class="gallery-item">
+              <a class="gallery-item__link" href="http://placehold.it/320x140">
+                <img class="gallery-item__image" src="http://placehold.it/280x180" width="280" height="180" alt="Фотография пользователя">
+              </a>
+              <div class="gallery-item__wrapper">
+                <h2 class="gallery-item__header">Антон</h2>
+                <time class="gallery-item__date" datetime="2019-07-14">(12 часов назад)</time>
+                <p class="gallery-item__text">Соседи будут рады!</p>
+                <span class="gallery-item__like">Нравится: 666</span>
+              </div>
+            </li>
+            <li class="gallery-item">
+              <a class="gallery-item__link" href="http://placehold.it/320x140">
+                <img class="gallery-item__image" src="http://placehold.it/280x180" width="280" height="180" alt="Фотография пользователя">
+              </a>
+              <div class="gallery-item__wrapper">
+                <h2 class="gallery-item__header">Борис</h2>
+                <time class="gallery-item__date" datetime="2019-07-14">(20 часов назад)</time>
+                <p class="gallery-item__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                <span class="gallery-item__like">Нравится: 215</span>
+              </div>
+            </li>
+            <li class="gallery-item">
+              <a class="gallery-item__link" href="http://placehold.it/320x140">
+                <img class="gallery-item__image" src="http://placehold.it/280x180" width="280" height="180" alt="Фотография пользователя">
+              </a>
+              <div class="gallery-item__wrapper">
+                <h2 class="gallery-item__header">Сергей</h2>
+                <time class="gallery-item__date" datetime="2019-07-14">(25 часов назад)</time>
+                <p class="gallery-item__text">Самая кубанская в мире!</p>
+                <span class="gallery-item__like">Нравится: 4</span>
+              </div>
+            </li>
+            <li class="gallery-item">
+              <a class="gallery-item__link" href="http://placehold.it/320x140">
+                <img class="gallery-item__image" src="http://placehold.it/280x180" width="280" height="180" alt="Фотография пользователя">
+              </a>
+              <div class="gallery-item__wrapper">
+                <h2 class="gallery-item__header">Максим</h2>
+                <time class="gallery-item__date" datetime="2019-07-14">(40 часов назад)</time>
+                <p class="gallery-item__text">Где снег-то?</p>
+                <span class="gallery-item__like">Нравится: 150</span>
+              </div>
+            </li>
+            <li class="gallery-item">
+              <a class="gallery-item__link" href="http://placehold.it/320x140">
+                <img class="gallery-item__image" src="http://placehold.it/280x180" width="280" height="180" alt="Фотография пользователя">
+              </a>
+              <div class="gallery-item__wrapper">
+                <h2 class="gallery-item__header">Надежда</h2>
+                <time class="gallery-item__date" datetime="2019-07-14">(45 часов назад)</time>
+                <p class="gallery-item__text">Всем GM и взаимные лайки!</p>
+                <span class="gallery-item__like">Нравится: 2560</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+
       </section>
     </main>
     <footer class="page-footer">
