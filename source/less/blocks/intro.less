@@ -1,42 +1,23 @@
 .intro {
+  height: 400px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  min-height: 170px;
   background-color: @blue-dark;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center -69px;
+  background-position: center top;
   color: @white;
 }
 
-.intro__wrapper {
-  width: 320px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 0 auto;
-  position: relative;
-
-  &--hand::before {
-    content: "";
-    display: block;
-    position: relative;
-    height: 400px;
-    bottom: 0;
-    background-image: url(../img/iphone-hand-mobile@1x.png);
-    background-repeat: no-repeat;
-    background-position: left bottom;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  &--header {
-    min-height: 170px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-}
-
-.intro__title {
+.intro-title {
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
   margin: 0;
   text-align: center;
+
+  &--hidden {
+    .visually-hidden;
+  }
 }
