@@ -1,0 +1,33 @@
+.button {
+  display: inline-block;
+  vertical-align: top;
+  padding: 15px 30px 16px;
+  border: none;
+  font-family: @font;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+
+  &--download {
+    border: 3px solid @white;
+    border-radius: 30px;
+    color: @white;
+    background-color: transparent;
+
+    &:hover,
+    &:focus {
+      background-color: @white;
+      color: @pink;
+    }
+
+    &:active {
+      color: rgba(@pink, 0.3);
+    }
+  }
+}
+
+
