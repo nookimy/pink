@@ -47,7 +47,7 @@
         <div class="post-list">
           <article class="post">
             <a class="post__panorama" href="#">
-              <img src="../img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня">
+              <img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня">
               <span class="post__panorama-sticker">Панорама дня</span>
             </a>
             <div class="post__body">
@@ -58,7 +58,7 @@
           </article>
           <article class="post">
             <a class="post__image" href="#">
-              <img src="../img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фото поста">
+              <img src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фото поста">
             </a>
             <div class="post__body">
               <p class="post__author">Левон <span class="post__date"><time datetime="2019-07-14">(5 часов назад)</time></span></p>
@@ -68,7 +68,7 @@
           </article>
           <article class="post">
             <a class="post__image" href="#">
-              <img src="../img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фото поста">
+              <img src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фото поста">
             </a>
             <div class="post__body">
               <p class="post__author">Антон <span class="post__date"><time datetime="2019-07-14">(12 часов назад)</time></span></p>
@@ -78,7 +78,7 @@
           </article>
           <article class="post">
             <a class="post__image" href="#">
-              <img src="../img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фото поста">
+              <img src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фото поста">
             </a>
             <div class="post__body">
               <p class="post__author">Борис <span class="post__date"><time datetime="2019-07-14">(12 часов назад)</time></span></p>
@@ -88,7 +88,7 @@
           </article>
           <article class="post">
             <a class="post__image" href="#">
-              <img src="../img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фото поста">
+              <img src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фото поста">
             </a>
             <div class="post__body">
               <p class="post__author">Сергей <span class="post__date"><time datetime="2019-07-14">(25 часов назад)</time></span></p>
@@ -98,7 +98,7 @@
           </article>
           <article class="post">
             <a class="post__image" href="#">
-              <img src="../img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фото поста">
+              <img src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фото поста">
             </a>
             <div class="post__body">
               <p class="post__author">Максим <span class="post__date"><time datetime="2019-07-14">(40 часов назад)</time></span></p>
@@ -108,7 +108,7 @@
           </article>
           <article class="post">
             <a class="post__image" href="#">
-              <img src="../img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фото поста">
+              <img src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фото поста">
             </a>
             <div class="post__body">
               <p class="post__author">Надежда <span class="post__date"><time datetime="2019-07-14">(45 часов назад)</time></span></p>
@@ -118,15 +118,41 @@
           </article>
         </div>
       </section>
+
+      <section class="photo-upload">
+        <h2 class="photo-upload__title photo-upload__title--hidden">Загрузить своё фото</h2>
+        <p class="photo-upload__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        <div class="photo-editor">
+          <form class="photo-editor__form" method="post" action="http://echo.htmlacademy.ru">
+            <img class="photo-editor__image" src="http://placehold.it/280x374" width="280" height="374" alt="Логотип Пинк">
+            <ul class="photo-editor__tools">
+              <li class="photo-editor__tool photo-editor__tool--cropping">
+                <img src="http://placehold.it/45x45" width="45" height="45" alt="Обрезать фото">
+              </li>
+              <li class="photo-editor__tool photo-editor__tool--fillcolor">
+                <img src="http://placehold.it/45x45" width="45" height="45" alt="Поменять цвето фото">
+              </li>
+              <li class="photo-editor__tool photo-editor__tool--contrast">
+                <img src="http://placehold.it/45x45" width="45" height="45" alt="Поменять контраст фото">
+              </li>
+            </ul>
+            <button class="photo-editor__upload-button button" type="submit">Запостить фото</button>
+            <button class="photo-editor__cancel-button button" type="submit">Отменить</button>
+          </form>
+        </div>
+      </section>
+
     </main>
 
     <footer class="page-footer">
 
       <a  class="page-footer__logo" href="index.html">
-        <img class="page-footer__logo-image" src="../img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип приложения Пинк">
+        <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип приложения Пинк">
       </a>
 
       <div class="page-footer__social social">
+        <h2 class="social__title social__title--hidden">Мы в соцсетях</h2>
+
         <a class="social__link social__link--twitter" href="#"></a>
         <a class="social__link social__link--facebook" href="#"></a>
         <a class="social__link social__link--youtube" href="#"></a>
@@ -134,7 +160,7 @@
 
       <div class="page-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">Разработано
-          <img class="copyright__image" src="../img/logo-htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
+          <img class="copyright__image" src="img/logo-htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
         </a>
       </div>
 
