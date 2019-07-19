@@ -1,0 +1,30 @@
+.site-list {
+  .reset-list;
+  text-align: center;
+}
+
+.site-list__item a {
+  display: block;
+  color: @white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+  padding: 15px 0;
+  box-shadow: 0 -1px 0 @black, inset 0 1px 0 rgba(@white, 0.15);
+
+  &:hover,
+  &:focus {
+    color: @pink;
+  }
+
+  &:active {
+    color: rgba(@white, 0.3);
+  }
+
+}
+
+.site-list__item:last-child a {
+  box-shadow: 0 -1px 0 @black, inset 0 1px 0 rgba(@white, 0.15), inset 0 -1px 0 @black;
+}
