@@ -36,17 +36,100 @@
 
     <main class="page-main">
 
-      <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <section class="intro">
+        <h1 class="intro-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </section>
+
+      <section class="application">
+
+        <h2 class="application__title application__title--hidden">Форма заявки</h2>
+
+        <p class="application__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+        <form class="application__form form" method="post" action="http://echo.htmlacademy.ru">
+          <fieldset class="form__fieldset">
+            <h3 class="form__fieldset-title form__fieldset-title--hidden">Введите полное имя</h3>
+            <label class="form__text-label" for="user-last-name">Фамилия:</label>
+            <input class="form__text-input" id="user-last-name" type="text" name="Фамилия" placeholder="Укажите фамилию">
+            <label class="form__text-label" for="user-first-name">Имя:</label>
+            <input class="form__text-input" id="user-first-name" type="text" name="Имя" placeholder="Введите ваше имя" required>
+            <label class="form__text-label" for="user-middle-name">Отчество:</label>
+            <input class="form__text-input" id="user-middle-name" type="text" name="Отчество" placeholder="Ну и отчество тоже">
+          </fieldset>
+
+          <fieldset class="form__fieldset">
+            <h3 class="form__fieldset-title">Ваши безбашенные достижения в путешествии</h3>
+
+            <input class="form__checkbox-input" type="checkbox" id="achivement1" name="Достижения" value="Сделал селфи с акулой" checked>
+            <label class="form__checkbox-label" for="achivement1">Сделал селфи с акулой</label>
+
+            <input class="form__checkbox-input" type="checkbox" id="achivement2" name="Достижения" value="Обгорел на пляже" checked>
+            <label class="form__checkbox-label" for="achivement2">Обгорел на пляже</label>
+
+            <input class="form__checkbox-input" type="checkbox" id="achivement3" name="Достижения" value="Видел Чака Норриса">
+            <label class="form__checkbox-label" for="achivement3">Видел Чака Норриса</label>
+
+            <input class="form__checkbox-input" type="checkbox" id="achivement4" name="Достижения" value="Накупил сувениров">
+            <label class="form__checkbox-label" for="achivement4">Накупил сувениров</label>
+
+            <input class="form__checkbox-input" type="checkbox" id="achivement5" name="Достижения" value="Удержал башню" checked>
+            <label class="form__checkbox-label" for="achivement5">Удержал башню</label>
+
+            <input class="form__checkbox-input" type="checkbox" id="achivement6" name="Достижения" value="Разгромил отель">
+            <label class="form__checkbox-label" for="achivement6">Разгромил отель</label>
+
+          </fieldset>
+
+          <fieldset class="form__fieldset">
+            <h3 class="form__fieldset-title form__fieldset-title--hidden">Контактные данные</h3>
+
+            <label class="form__text-label" for="user-phone">Номер телефона</label>
+            <input class="form__text-input" id="user-phone" type="tel" name="Номер телефона" placeholder="Номер, пожалуйста">
+
+            <label class="form__text-label" for="user-email">Aдрес почты</label>
+            <input class="form__text-input" id="user-email" type="email" name="E-mail" placeholder="Введите почту *" required>
+
+          </fieldset>
+
+          <fieldset class="form__fieldset">
+            <h3 class="form__fieldset-title">С каким приложением путешествовали?</h3>
+
+            <input class="form__radio-input" type="radio" id="ios" name="Приложение" value="Pink для iOS" checked>
+            <label class="form__radio-label" for="ios">Pink для iOS</label>
+
+            <input class="form__radio-input" type="radio" id="android" name="Приложение" value="Pink на Android">
+            <label class="form__radio-label" for="android">Pink на Android</label>
+
+            <input class="form__radio-input" type="radio" id="windows" name="Приложение" value="Windows Phone">
+            <label class="form__radio-label" for="windows">Windows Phone</label>
+
+
+          </fieldset>
+
+          <fieldset class="form__fieldset">
+            <h3 class="form__fieldset-title">Опишите свои эмоции</h3>
+
+            <textarea class="form__textarea" name="Сообщение" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+
+          </fieldset>
+
+          <button class="form__submit-button  button" type="submit">Отправить форму</button>
+
+          <p class="form__note"><span>*</span> - обязательные поля</p>
+
+        </form>
+      </section>
 
     </main>
 
     <footer class="page-footer">
 
       <a  class="page-footer__logo" href="index.html">
-        <img class="page-footer__logo-image" src="../img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип приложения Пинк">
+        <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип приложения Пинк">
       </a>
 
       <div class="page-footer__social social">
+        <h2 class="social__title social__title--hidden">Мы в соцсетях</h2>
+
         <a class="social__link social__link--twitter" href="#"></a>
         <a class="social__link social__link--facebook" href="#"></a>
         <a class="social__link social__link--youtube" href="#"></a>
@@ -54,7 +137,7 @@
 
       <div class="page-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">Разработано
-          <img class="copyright__image" src="../img/logo-htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
+          <img class="copyright__image" src="img/logo-htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
         </a>
       </div>
 
