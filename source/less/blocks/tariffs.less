@@ -1,0 +1,58 @@
+.tariffs {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: @grey-light;
+}
+
+.tariffs__title {
+  &--hidden {
+    .visually-hidden;
+  }
+}
+
+.tariffs__table {
+  border-collapse: collapse;
+}
+
+.tariffs__header {
+  position: relative;
+  min-width: 275px;
+  background-color: @blue-dark;
+  color: @white;
+  padding: 20px;
+  text-transform: uppercase;
+  border-right: 2px solid @grey;
+  border-left: 2px solid @grey;
+
+  &--sticker::before {
+    content: "Хит";
+    position: absolute;
+    top: 0;
+    left: -2px;
+    width: 74px;
+    height: 73px;
+    background: url(../img/bg-hit.svg) no-repeat top left;
+    background-size: 74px 73px;
+  }
+}
+
+.tariffs__name {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.tariffs__price {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.tariffs__item {
+  border: 2px solid @grey;
+  background-color: @white;
+  text-transform: uppercase;
+  padding: 15px 20px;
+}

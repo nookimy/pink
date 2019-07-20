@@ -101,16 +101,23 @@
 
       <section class="tariffs">
 
-        <div class="tariffs__wrapper slider">
-
-          <h2 class="tariffs__title">Тарифы</h2>
+          <h2 class="tariffs__title tariffs__title--hidden">Тарифы</h2>
 
           <table class="tariffs__table">
             <tbody>
               <tr class="tariffs__table-header">
-                <th class="tariffs__name">Тариф 1</th>
-                <th class="tariffs__name tariffs__name--sticker">Стандарт <span>3,99 USD</span></th>
-                <th class="tariffs__name">Тариф 3</th>
+                <th class="tariffs__header">
+                  <p class="tariffs__name">Тариф 1</p>
+                  <p class="tariffs__price">3,99 USD</p>
+                </th>
+                <th class="tariffs__header tariffs__header--sticker">
+                  <p class="tariffs__name">Стандарт</p>
+                  <p class="tariffs__price">3,99 USD</p>
+                </th>
+                <th class="tariffs__header">
+                  <p class="tariffs__name">Тариф 3</p>
+                  <p class="tariffs__price">3,99 USD</p>
+                </th>
               </tr>
               <tr>
                 <td class="tariffs__item tariffs__item--yes">Розовый фильтр</td>
@@ -135,7 +142,6 @@
             <button class="slider__toggle" type="button">2</button>
             <button class="slider__toggle" type="button">3</button>
           </p>
-        </div>
 
       </section>
 
