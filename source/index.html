@@ -10,7 +10,7 @@
     <header class="page-header">
 
       <a class="page-header__logo">
-        <img class="page-header__logo-image" src="http://placehold.it/75x22" width="75" height="22" alt="Логотип Пинк">
+        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Пинк">
       </a>
 
       <nav class="main-nav">
@@ -81,7 +81,7 @@
 
       <section class="reviews">
         <div class="reviews__wrapper slider">
-          <h2 class="reviews__title">Отзывы о приложении</h2>
+          <h2 class="reviews__title reviews__title--hidden">Отзывы о приложении</h2>
 
           <ul class="reviews__list">
             <li class="reviews__item">
@@ -103,14 +103,23 @@
 
         <div class="tariffs__wrapper slider">
 
-          <h2 class="tariffs__title">Тарифы</h2>
+          <h2 class="tariffs__title tariffs__title--hidden">Тарифы</h2>
 
           <table class="tariffs__table">
             <tbody>
               <tr class="tariffs__table-header">
-                <th class="tariffs__name">Тариф 1</th>
-                <th class="tariffs__name tariffs__name--sticker">Стандарт <span>3,99 USD</span></th>
-                <th class="tariffs__name">Тариф 3</th>
+                <th class="tariffs__header">
+                  <p class="tariffs__name">Тариф 1</p>
+                  <p class="tariffs__price">3,99 USD</p>
+                </th>
+                <th class="tariffs__header tariffs__header--sticker">
+                  <p class="tariffs__name">Стандарт</p>
+                  <p class="tariffs__price">3,99 USD</p>
+                </th>
+                <th class="tariffs__header">
+                  <p class="tariffs__name">Тариф 3</p>
+                  <p class="tariffs__price">3,99 USD</p>
+                </th>
               </tr>
               <tr>
                 <td class="tariffs__item tariffs__item--yes">Розовый фильтр</td>
@@ -135,6 +144,7 @@
             <button class="slider__toggle" type="button">2</button>
             <button class="slider__toggle" type="button">3</button>
           </p>
+
         </div>
 
       </section>
