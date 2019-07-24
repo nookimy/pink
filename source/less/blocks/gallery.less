@@ -3,8 +3,16 @@
 }
 
 .gallery__intro {
-  margin: 0 auto 48px;
+  .container;
+  margin-bottom: 48px;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
+}
+
+@media (min-width: @tablets-width) {
+  .gallery__intro {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
