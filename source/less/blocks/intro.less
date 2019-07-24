@@ -1,21 +1,37 @@
 .intro {
-  min-height: 240px;
+  background-image: url(../img/bg-back-tablet@1x.jpg);
   background-color: @blue-dark;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center -69px;
   color: @white;
+  padding-top: 0;
+}
+
+.intro__wrapper {
+  .container;
 }
 
 .intro-title {
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: 300;
-  margin: 0;
-  text-align: center;
-  padding-top: 90px;
+  .visually-hidden;
+}
 
-  &--hidden {
-    .visually-hidden;
+@media (max-width: 659px) {
+  .intro__wrapper--index {
+    width: auto;
+    padding: 0;
+    padding-top: 400px;
+  }
+}
+
+@media (min-width: @tablets-width) {
+  .intro__wrapper {
+    height: 100%;
+    min-height: 620px;
+  }
+}
+
+@media (min-width: @desktops-width) {
+  .intro {
+    background-image: url(../img/bg-back-desktop@1x.jpg);
   }
 }

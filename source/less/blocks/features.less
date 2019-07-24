@@ -1,25 +1,30 @@
 .features {
   padding-top: 40px;
-  padding-bottom: 40px;
-  background-color: @grey-light;
 }
 
 .features__header {
+  .container;
   padding-bottom: 30px;
 }
 
 .features__title {
   font-size: 24px;
-  line-height: 30px;
+  line-height: 33px;
   font-weight: 300;
   margin: 0;
   text-align: center;
 }
 
+.features__wrapper {
+  padding-top: 80px;
+}
+
+.features__inner {
+  .container;
+}
+
 .features__list {
   .reset-list;
-
-  padding-top: 80px;
 }
 
 .features__item {
@@ -38,4 +43,62 @@
 
 .features__description {
   margin: 0;
+}
+
+@media (max-width: 659px) {
+  .features__research {
+    .visually-hidden;
+  }
+}
+
+@media (min-width: @tablets-width) {
+  .features {
+    padding-top: 50px;
+  }
+  .features__list {
+    padding-left: 50%;
+  }
+  .features__research-inner {
+    .container;
+  }
+  .features__research-lead {
+    padding-top: 40px;
+    padding-bottom: 23px;
+    padding-left: 50%;
+  }
+  .features__research-title {
+    margin: 0;
+    font-size: 30px;
+    line-height: 36px;
+    color: @black;
+    font-weight: 700;
+  }
+  .advantages__research-text {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .features__research-link {
+    color: #d22856;
+  }
+}
+
+
+@media (min-width: @desktops-width) {
+  .features {
+    padding-top: 70px;
+  }
+  .features__wrapper {
+    padding-top: 75px;
+  }
+  .features__list {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+  }
+  .features__item {
+    width: 250px;
+  }
+  .features__research-lead {
+    padding-left: 370px;
+  }
 }
