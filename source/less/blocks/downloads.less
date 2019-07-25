@@ -1,14 +1,7 @@
 .downloads {
-  padding-top: 28px;
-  padding-bottom: 29px;
+  padding: 30px 0;
   background-color: @blue-darkest;
   text-align: center;
-}
-
-.downloads__title {
-  &--hidden {
-    .visually-hidden;
-  }
 }
 
 .downloads__button {
@@ -46,4 +39,31 @@
   margin: 0;
   margin-top: 22px;
   color: @white;
+}
+
+@media (max-width: 659px) {
+  .downloads__title {
+    .visually-hidden;
+  }
+
+  .downloads__wrapper {
+    .container;
+  }
+}
+
+@media (min-width: @tablets-width) {
+  .downloads {
+    padding: 93px 0;
+    width: 300px;
+    position: relative;
+    background-color: transparent;
+    z-index: 2;
+  }
+
+  .downloads__title {
+    padding: 0 55px;
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 300;
+  }
 }

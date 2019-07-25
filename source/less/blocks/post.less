@@ -3,11 +3,24 @@
 }
 
 .post__panorama {
+  display: block;
   position: relative;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.post__body-wrapper {
+  .container;
+}
+
+.post__body {
+  padding: 20px;
+  background-color: @grey-light;
 }
 
 .post__panorama-sticker {
   position: absolute;
+  top: 0;
   left: 50%;
   font-size: 12px;
   line-height: 24px;
@@ -23,9 +36,8 @@
   display: block;
 }
 
-.post__body {
-  padding: 20px;
-  background-color: @grey-light;
+.gallery__wrapper {
+  .container;
 }
 
 .post__author {
@@ -50,4 +62,17 @@
   text-transform: uppercase;
   color: @pink;
   margin-top: 10px;
+}
+
+@media (min-width: @tablets-width) {
+  .post-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .post--item {
+    width: 280px;
+    min-height: 455px;
+    margin-right: 20px;
+  }
 }
