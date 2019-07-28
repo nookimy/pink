@@ -11,7 +11,7 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 32px;
-  padding: 15px 0;
+  padding: 16px 0;
   box-shadow: 0 -1px 0 @black, inset 0 1px 0 rgba(@white, 0.15);
 
   &:hover,
@@ -35,9 +35,16 @@
   box-shadow: 0 -1px 0 @black, inset 0 1px 0 rgba(@white, 0.15), inset 0 -1px 0 @black;
 }
 
+@media (min-width: @tablets-width) {
+  .site-list__item a {
+    padding-left: 15px;
+  }
+}
+
 @media (min-width: @desktops-width) {
   .site-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-end;
   }
 
