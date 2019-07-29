@@ -1,9 +1,14 @@
 .gallery {
   padding-top: 46px;
+
+  &__wrapper {
+    .container;
+  }
 }
 
 .gallery__intro {
   .container;
+  padding: 0 35px;
   margin-bottom: 48px;
   font-size: 14px;
   line-height: 30px;
@@ -11,8 +16,20 @@
 }
 
 @media (min-width: @tablets-width) {
+  .gallery {
+    padding-top: 92px;
+  }
   .gallery__intro {
+    padding: 0 60px;
+    margin-bottom: 76px;
     font-size: 18px;
     line-height: 30px;
+  }
+}
+
+@media (min-width: @desktops-width) {
+  .gallery__intro {
+    padding: 0 180px;
+    margin-bottom: 88px;
   }
 }
