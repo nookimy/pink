@@ -15,7 +15,7 @@
   display: block;
   width: 50px;
   height: 4px;
-  background-color: #fff;
+  background-color: @white;
   border-radius: 1px;
 
   &::before,
@@ -25,7 +25,7 @@
     left: 0;
     width: 50px;
     height: 4px;
-    background-color: #fff;
+    background-color: @white;
     border-radius: 1px;
   }
 
@@ -47,7 +47,7 @@
     top: 10px;
     width: 30px;
     height: 4px;
-    background-color: #fff;
+    background-color: @white;
     border-radius: 1px;
   }
 
@@ -63,7 +63,7 @@
 .main-nav__toggle:hover span,
 .main-nav__toggle:hover span::before,
 .main-nav__toggle:hover span::after {
-  background-color:@pink;
+  background-color: @pink;
 }
 
 .main-nav__toggle:active span,
@@ -90,10 +90,11 @@
   .main-nav__toggle {
     top: 44px;
   }
+
   .main-nav--opened .main-nav__toggle span {
     &::before,
     &::after {
-      right: 0px;
+      right: 0;
     }
   }
 }
