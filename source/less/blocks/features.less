@@ -9,14 +9,30 @@
 
 .features__title {
   font-size: 24px;
-  line-height: 33px;
+  line-height: 28px;
   font-weight: 300;
   margin: 0;
   text-align: center;
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .features__wrapper {
-  padding-top: 80px;
+  position: relative;
+  padding-top: 84px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #f2f2f2 url("../img/bg-triangle-white.svg") no-repeat center top;
+    background-size: 100%;
+  }
 }
 
 .features__inner {
@@ -25,11 +41,35 @@
 
 .features__list {
   .reset-list;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  &::after {
+    content: "";
+    position: relative;
+    display: block;
+    bottom: 0;
+    width: 158px;
+    height: 277px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    background-image: url("../img/iphone-screen-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
 }
 
 .features__item {
   text-align: center;
-  margin-bottom: 30px;
+  color: @black;
+  margin-bottom: 29px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .features__name {
@@ -56,59 +96,139 @@
     padding-top: 50px;
   }
 
-  .features__list {
-    padding-left: 50%;
+  .features__header {
+    margin-bottom: 14px;
   }
 
-  .features__research-inner {
-    .container;
-  }
+  .features__title {
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 0;
 
-  .features__research-lead {
-    padding-top: 40px;
-    padding-bottom: 23px;
-    padding-left: 50%;
-  }
-
-  .features__research-title {
-    margin: 0;
-    font-size: 30px;
-    line-height: 36px;
-    color: @black;
-    font-weight: 700;
-  }
-
-  .advantages__research-text {
-    margin: 0;
-    margin-bottom: 10px;
-  }
-
-  .features__research-link {
-    color: #d22856;
-  }
-}
-
-
-@media (min-width: @desktops-width) {
-  .features {
-    padding-top: 70px;
+    &:last-child {
+      display: block;
+      max-width: 355px;
+      margin: 0 auto;
+    }
   }
 
   .features__wrapper {
+    padding-top: 0;
+  }
+
+  .features__inner {
     padding-top: 75px;
   }
 
   .features__list {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 10px;
+    padding-left: 50%;
+    padding-bottom: 42px;
+
+    &::after {
+      display: none;
+    }
   }
 
   .features__item {
-    width: 250px;
+    text-align: left;
+    margin-bottom: 33px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 268px;
+      height: 481px;
+    }
+
+    &--screen3::before {
+      background: url("../img/iphone-screen-3-tablet@1x.png") no-repeat center top;
+    }
   }
 
-  .features__research-lead {
-    padding-left: 370px;
+  .features__name {
+    margin-bottom: 13px;
+  }
+
+  .features__research {
+    padding-top: 58px;
+  }
+}
+
+@media (min-width: @desktops-width) {
+  .features {
+    padding-top: 68px;
+  }
+
+  .features__header {
+    margin-bottom: 51px;
+  }
+
+  .features__title {
+    font-size: 50px;
+    line-height: 60px;
+
+    &:last-child {
+      max-width: 500px;
+    }
+  }
+
+  .features__wrapper {
+    padding-top: 0;
+  }
+
+  .features__inner {
+    padding-top: 0;
+  }
+
+  .features__list {
+    flex-direction: row;
+    padding: 0;
+    top: 12px;
+  }
+
+  .features__item {
+    text-align: center;
+    position: relative;
+    width: 300px;
+    padding: 357px 30px 67px;
+    margin-right: 20px;
+    margin-bottom: 0;
+    font-size: 18px;
+    line-height: 30px;
+    top: -12px;
+
+    &::before {
+      top: 0;
+      width: 100%;
+      height: 302px;
+    }
+
+    &--screen1::before {
+      background: url("../img/iphone-screen-1-desktop@1x.png") no-repeat center top;
+    }
+
+    &--screen2::before {
+      background: url("../img/iphone-screen-2-desktop@1x.png") no-repeat center top;
+    }
+
+    &--screen3::before {
+      background: url("../img/iphone-screen-3-desktop@1x.png") no-repeat center top;
+    }
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+
+  .features__name {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 27px;
+  }
+
+  .features__research {
+    padding-top: 0;
   }
 }

@@ -1,6 +1,22 @@
 .copyright__link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.copyright__text {
   font-size: 14px;
   color: @blue-dark;
   text-decoration: none;
   vertical-align: top;
+}
+
+.copyright__image {
+  margin-left: 15px;
+}
+
+@media (min-width: @tablets-width) {
+  .copyright__text {
+    font-size: 18px;
+    line-height: 18px;
+  }
 }

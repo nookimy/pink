@@ -12,14 +12,14 @@
         <a class="page-header__logo">
           <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Пинк">
         </a>
-        <nav class="main-nav">
-          <!--<button class="main-nav__toggle" type="button">Закрыть</button>-->
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <button class="main-nav__toggle" type="button"><span></span></button>
             <ul class="main-nav__list  site-list">
               <li class="site-list__item">
                 <a href="index.html">Главная</a>
               </li>
               <li class="site-list__item">
-                <a>Фотографии</a>
+                <a href="photo.html">Фотографии</a>
               </li>
               <li class="site-list__item site-list__item--current">
                 <a>Конкурс</a>
@@ -35,10 +35,12 @@
     <main class="page-main">
 
       <section class="intro">
-        <h1 class="intro-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        <div class="intro__wrapper intro__wrapper--inner intro__wrapper--contest">
+          <h1 class="intro__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        </div>
       </section>
 
-      <section class="application">
+      <!--<section class="application">
 
         <h2 class="application__title application__title--hidden">Форма заявки</h2>
 
@@ -125,30 +127,70 @@
           <button class="form__submit-button  button" type="submit">Отправить форму</button>
           <p class="form__note"><span>*</span> — обязательные поля</p>
         </form>
-      </section>
+      </section>-->
 
     </main>
 
     <footer class="page-footer">
-
-      <a  class="page-footer__logo" href="index.html">
-        <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип приложения Пинк">
-      </a>
-
-      <div class="page-footer__social social">
-        <h2 class="social__title social__title--hidden">Мы в соцсетях</h2>
-
-        <a class="social__link social__link--twitter" href="#"></a>
-        <a class="social__link social__link--facebook" href="#"></a>
-        <a class="social__link social__link--youtube" href="#"></a>
-      </div>
-
-      <div class="page-footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">Разработано
-          <img class="copyright__image" src="img/logo-htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
+      <div class="page-footer__wrapper">
+        <a  class="page-footer__logo" href="index.html">
+          <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип приложения Пинк">
         </a>
-      </div>
 
+        <div class="page-footer__social social">
+          <h2 class="social__title social__title--hidden">Мы в соцсетях</h2>
+          <a class="social__link social__link--twitter" href="#">
+            <img class="social__image" src="img/icon-twitter.svg" width="16" height="14" alt="Твиттер">
+          </a>
+          <a class="social__link social__link--facebook" href="#">
+            <img class="social__image" src="img/icon-facebook.svg" width="9" height="18" alt="Фейсбук">
+          </a>
+          <a class="social__link social__link--youtube" href="#">
+            <img class="social__image" src="img/icon-youtube.svg" width="16" height="13" alt="Ютуб">
+          </a>
+        </div>
+
+        <div class="page-footer__copyright copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+            <span class="copyright__text">Разработано</span>
+            <img class="copyright__image" src="img/logo-htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
+          </a>
+        </div>
+      </div>
     </footer>
+
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+      var pageHeader = document.querySelector(".page-header");
+      var pageIntro = document.querySelector(".intro");
+
+      navMain.classList.remove("main-nav--nojs");
+      pageHeader.classList.remove("page-header--full");
+      pageIntro.classList.remove("intro--short");
+
+      navToggle.addEventListener("click", function() {
+        if (navMain.classList.contains("main-nav--closed")) {
+          navMain.classList.remove("main-nav--closed");
+          navMain.classList.add("main-nav--opened");
+          if (pageHeader.classList.contains("page-header--full")) {
+            pageHeader.classList.remove("page-header--full");
+          } else {
+            pageHeader.classList.add("page-header--full");
+          };
+          if (pageIntro.classList.contains("intro--short")) {
+            pageIntro.classList.remove("intro--short");
+          } else {
+            pageIntro.classList.add("intro--short");
+          };
+        } else {
+          navMain.classList.add("main-nav--closed");
+          navMain.classList.remove("main-nav--opened");
+          pageHeader.classList.remove("page-header--full");
+          pageIntro.classList.remove("intro--short");
+        }
+      });
+    </script>
+
   </body>
 </html>

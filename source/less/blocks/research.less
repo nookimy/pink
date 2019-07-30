@@ -1,0 +1,121 @@
+.research__wrapper {
+  .container;
+  display: flex;
+}
+
+.research__lead {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 23px;
+}
+
+.research__timer {
+  position: relative;
+  margin-left: 1px;
+  margin-right: 71px;
+  width: 238px;
+  height: 276px;
+  flex-shrink: 0;
+
+  &::before {
+    content: "24";
+    position: absolute;
+    vertical-align: top;
+    top: 55px;
+    left: 50%;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 150px;
+    transform: translateX(-50%);
+    color: @pink;
+    border: 15px solid @pink;
+    border-radius: 50%;
+    padding-right: 33px;
+    padding-left: 32px;
+    padding-top: 7px;
+    padding-bottom: 17px;
+    z-index: 1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 238px;
+    height: 276px;
+    background-image: url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-size: 238px 276px;
+    background-position: left top;
+  }
+}
+
+.research__title {
+  margin-top: 0;
+  margin-bottom: 9px;
+  font-size: 30px;
+  line-height: 36px;
+  color: @black;
+  max-width: 175px;
+  font-weight: 700;
+}
+
+.research__text {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.research__link {
+  color: @pink;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+@media (min-width: @desktops-width) {
+  .research {
+    background-color: @grey-light;
+  }
+
+  .research__lead {
+    padding-top: 91px;
+    padding-left: 0;
+    padding-right: 40px;
+    padding-bottom: 115px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .research__timer {
+    width: 298px;
+    height: 345px;
+    margin-right: 67px;
+
+    &::before {
+      top: 69px;
+      font-size: 120px;
+      line-height: 186px;
+      border: 17px solid #d22856;
+      border-radius: 50%;
+      padding-right: 41px;
+      padding-left: 41px;
+      padding-top: 9px;
+      padding-bottom: 24px;
+    }
+
+    &::after {
+      width: 298px;
+      height: 345px;
+      background-size: 298px 345px;
+    }
+  }
+
+  .research__title {
+    margin-bottom: 20px;
+    max-width: 300px;
+  }
+
+  .research__text {
+    margin-bottom: 30px;
+  }
+}

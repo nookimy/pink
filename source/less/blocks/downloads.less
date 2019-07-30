@@ -1,10 +1,21 @@
 .downloads {
-  padding: 30px 0;
+  padding-top: 28px;
+  padding-bottom: 29px;
   background-color: @blue-darkest;
+  text-align: center;
+  color: @white;
+}
+
+.downloads__title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  margin: 0;
   text-align: center;
 }
 
 .downloads__button {
+  width: 100%;
   margin-bottom: 32px;
 }
 
@@ -13,37 +24,42 @@
   font-size: 0;
   vertical-align: top;
   width: 55px;
-  height: 55px;
+  height: 62px;
   background-color: @pink;
-  margin-right: 15px;
-  margin-left: 15px;
+  margin-right: 8px;
+  margin-left: 8px;
 
   &--apple {
     background: url("../img/logo-apple.svg") no-repeat top left;
-    background-size: 55px 55px;
+    background-size: 47px 57px;
   }
 
   &--android {
     background: url("../img/logo-android.svg") no-repeat center;
-    background-size: 55px 55px;
+    background-size: 43px 47px;
   }
 
   &--windows {
     background: url("../img/logo-microsoft.svg") no-repeat right;
-    background-size: 55px 55px;
+    background-size: 44px 41px;
   }
 }
 
 .downloads__description {
   font-weight: 300;
   margin: 0;
-  margin-top: 22px;
-  color: @white;
+  margin-top: 17px;
 }
 
 @media (max-width: 659px) {
   .downloads__title {
-    .visually-hidden;
+    display: block;
+    position: absolute;
+    top: 23px;
+    width: 280px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
   }
 
   .downloads__wrapper {
@@ -61,9 +77,45 @@
   }
 
   .downloads__title {
-    padding: 0 55px;
+    padding-left: 55px;
+    padding-right: 55px;
+    margin-top: 0;
+    margin-bottom: 28px;
     font-size: 40px;
     line-height: 48px;
     font-weight: 300;
+  }
+
+  .downloads__button {
+    margin-bottom: 46px;
+  }
+
+  .downloads__description {
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 38px;
+  }
+}
+
+@media (min-width: @desktops-width) {
+  .downloads {
+    padding: 109px 0;
+  }
+
+  .downloads__title {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 51px;
+    margin-top: 40px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .downloads__button {
+    margin-bottom: 67px;
+  }
+
+  .downloads__description {
+    margin-top: 55px;
   }
 }
