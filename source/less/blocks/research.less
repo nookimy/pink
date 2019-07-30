@@ -34,6 +34,18 @@
     padding-left: 32px;
     padding-top: 7px;
     padding-bottom: 17px;
+    z-index: 1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 238px;
+    height: 276px;
+    background-image: url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-size: 238px 276px;
+    background-position: left top;
   }
 }
 
@@ -89,6 +101,12 @@
       padding-left: 41px;
       padding-top: 9px;
       padding-bottom: 24px;
+    }
+
+    &::after {
+      width: 298px;
+      height: 345px;
+      background-size: 298px 345px;
     }
   }
 

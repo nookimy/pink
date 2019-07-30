@@ -46,12 +46,18 @@
   }
 
   &__like {
+    .button-reset;
     position: relative;
     font-size: 12px;
     line-height: 24px;
     text-transform: uppercase;
     color: @pink;
     padding-left: 32px;
+    margin-right: auto;
+
+    &:hover {
+      text-decoration: underline;
+    }
 
     &::before {
       content: "";
