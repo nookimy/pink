@@ -1,33 +1,116 @@
-.contacts__title {
+.contacts {
+  padding-top: 40px;
   text-align: center;
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: 300;
-  margin: 0;
-  margin-bottom: 30px;
+
+  &__wrapper {
+    .container;
+  }
+
+  &__title {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 300;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+  }
+
+  &__item {
+    margin-bottom: 25px;
+  }
+
+  &__item-lead {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  &__item-info {
+    color: @pink;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+
+    &[href]:hover,
+    &[href]:focus {
+      color: @black;
+      text-decoration: underline;
+    }
+
+    &[href]:active {
+      color: rgba(@blue-dark, 0.3);
+      text-decoration: none;
+    }
+  }
+
+  &__map {
+    height: 200px;
+  }
 }
 
-.contacts__items {
-  padding-bottom: 15px;
+@media (min-width: @tablets-width) {
+  .contacts {
+    padding-top: 45px;
+
+    &__title {
+      font-size: 40px;
+      line-height: 48px;
+      width: 470px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 45px;
+    }
+
+    &__item {
+      padding-bottom: 30px;
+    }
+
+    &__items {
+      flex-direction: row;
+    }
+
+    &__item {
+      width: 300px;
+      margin-bottom: 40px;
+      flex-grow: 1;
+    }
+
+    &__map {
+      height: 200px;
+    }
+  }
 }
 
-.contacts__item {
-  text-align: center;
-  margin-bottom: 20px;
-}
+@media (min-width: @desktops-width) {
+  .contacts {
+    padding-top: 65px;
 
-.contacts__item-lead {
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 700;
-  margin: 0;
-}
+    &__title {
+      font-size: 50px;
+      line-height: 60px;
+      margin-bottom: 55px;
+    }
 
-.contacts__item-info {
-  color: #d22856;
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: 300;
-  font-style: normal;
-  text-decoration: none;
+    &__items {
+      padding-bottom: 20px;
+    }
+
+    &__item {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    &__map {
+      height: 500px;
+    }
+  }
 }
