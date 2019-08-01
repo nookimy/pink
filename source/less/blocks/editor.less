@@ -1,0 +1,173 @@
+.editor {
+  background-color: @grey-light;
+
+  &__wrapper {
+    .container;
+  }
+
+  &__image {
+    margin: 0;
+    padding-top: 20px;
+  }
+
+  &__fields {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+  }
+
+  &__wrapper-tools {
+    padding-top: 40px;
+  }
+
+  &__tools {
+    position: relative;
+    .reset-list;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__tool {
+  }
+
+  &__icon {
+    width: 45px;
+    height: 45px;
+  }
+
+  &__control {
+  }
+
+  &__range {
+    position: relative;
+    height: 14px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+
+  &__scale {
+    height: 2px;
+    background-color: @blue-dark;
+  }
+
+  &__buttons {
+    padding-top: 40px;
+  }
+
+  &__button-control {
+    position: absolute;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    top: 0;
+    bottom: 0;
+    left: 70%;
+    border: 2px solid @pink;
+    border-radius: 50%;
+    background-color: @white;
+    cursor: pointer;
+  }
+
+  &__button {
+    width: 100%;
+    border: 3px solid;
+    border-radius: 30px;
+    background-color: transparent;
+
+    &--upload {
+      border-color: @pink;
+      color: @pink;
+      margin-bottom: 15px;
+
+      &:hover,
+      &:focus {
+        background-color: @pink;
+        color: @white;
+      }
+
+      &:active {
+        color: rgb(@white, 0.3);
+      }
+    }
+
+    &--cancel {
+      border-color: @blue-dark;
+      color: @blue-dark;
+      opacity: 0.1;
+
+      &:hover,
+      &active {
+        opacity: 0.3;
+      }
+
+      &:active {
+        background-color: @blue-dark;
+        color: @white;
+      }
+    }
+  }
+}
+
+@media (max-width: 659px) {
+  .editor {
+    &__wrapper {
+      width: 100%;
+      padding: 0;
+    }
+
+    &__image {
+      .container;
+    }
+
+    &__wrapper-tools {
+      .container;
+    }
+
+    &__tools {
+      padding-bottom: 70px;
+    }
+
+    &__control {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding-bottom: 28px
+    }
+
+    &__wraper-buttons {
+      .container;
+    }
+  }
+}
+
+@media (min-width: @tablets-width) {
+  .editor {
+    &__form {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__image {
+      width: 300px;
+    }
+
+    &__fields {
+      padding: 45px 0;
+      width: 275px;
+    }
+  }
+}
+
+@media (min-width: @desktops-width) {
+  .editor {
+    &__form {
+      padding: 0 60px;
+    }
+
+    &__image {
+      width: 300px;
+      padding: 60px 0;
+    }
+  }
+}

@@ -124,28 +124,63 @@
 
       </section>
 
-      <!--<section class="photo-upload">
-        <h2 class="photo-upload__title photo-upload__title--hidden">Загрузить своё фото</h2>
-        <p class="photo-upload__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
-        <div class="photo-editor">
-          <form class="photo-editor__form" method="post" action="http://echo.htmlacademy.ru">
-            <img class="photo-editor__image" src="img/photo-road-ddesktop@1x.jpg" width="100%" alt="Загруженное фото">
-            <ul class="photo-editor__tools">
-              <li class="photo-editor__tool photo-editor__tool--crop">
-                <img src="img/icon-editor-crop.svg" width="45" height="45" alt="Обрезать фото">
-              </li>
-              <li class="photo-editor__tool photo-editor__tool--fill">
-                <img src="img/icon-editor-fill.svg" width="45" height="45" alt="Поменять цвето фото">
-              </li>
-              <li class="photo-editor__tool photo-editor__tool--contrast">
-                <img src="img/icon-editor-contrast.svg" width="45" height="45" alt="Поменять контраст фото">
-              </li>
-            </ul>
-            <button class="photo-editor__upload-button button" type="submit">Запостить фото</button>
-            <button class="photo-editor__cancel-button button" type="submit">Отмена</button>
-          </form>
+      <section class="upload">
+        <h2 class="upload__title upload__title--hidden">Загрузить своё фото</h2>
+
+        <p class="upload__text">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
+
+        <div class="upload__editor editor">
+          <div class="editor__wrapper">
+            <form class="editor__form" method="post" action="http://echo.htmlacademy.ru">
+                <figure class="editor__image">
+                    <img src="img/photo-road-desktop@1x.jpg" width="100%" alt="Загруженное фото">
+                </figure>
+                <div class="editor__fields">
+                  <div class="editor__wrapper-tools">
+                    <ul class="editor__tools">
+                      <li class="editor__tool">
+                        <div class="editor__icon">
+                          <img src="img/icon-editor-crop.svg" width="45" height="45" alt="Обрезать фото">
+                        </div>
+                        <div class="editor__control">
+                          <div class="editor__range">
+                            <div class="editor__scale"></div>
+                            <div class="editor__button-control"></div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="editor__tool">
+                        <div class="editor__icon">
+                          <img src="img/icon-editor-fill.svg" width="45" height="45" alt="Обрезать фото">
+                        </div>
+                      </li>
+                      <li class="editor__tool">
+                        <div class="editor__icon">
+                          <img src="img/icon-editor-contrast.svg" width="45" height="45" alt="Обрезать фото">
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="editor__buttons">
+                    <div class="editor__wraper-buttons">
+                      <button class="button editor__button editor__button--upload" type="submit">Запостить</button>
+                      <button class="button editor__button editor__button--cancel" type="submit">Отмена</button>
+                    </div>
+                  </div>
+                </div>
+                <!--
+                <div class="editor__control">
+                  <div class="editor__scale"></div>
+                  <div class="editor__button-control"></div>
+                </div>
+                <button class="editor__upload-button button" type="submit">Запостить</button>
+                <button class="editor__cancel-button button" type="submit">Отмена</button>
+              </div>-->
+            </form>
+          </div>
         </div>
-      </section>-->
+      </section>
+
 
     </main>
 
