@@ -1,5 +1,5 @@
 .application {
-  padding-top: 46px;
+  padding-top: 45px;
 }
 
 .application__title {
@@ -9,8 +9,43 @@
 }
 
 .application__intro {
-  margin: 0 auto 48px;
+  .container;
+  margin-bottom: 48px;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
+}
+
+.application__wrapper {
+  .container;
+}
+
+@media (max-width: 659px) {
+  .application {
+    &--hidden {
+      .visually-hidden;
+    }
+  }
+
+  .application__wrapper {
+    width: 100%;
+    padding: 0;
+  }
+
+  .application__note {
+    .visually-hidden;
+  }
+}
+
+@media (min-width: @tablets-width) {
+  .application {
+    padding-top: 90px;
+  }
+
+  .application__intro {
+    font-size: 18px;
+    line-height: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 }

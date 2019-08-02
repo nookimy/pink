@@ -45,14 +45,14 @@
 
         <article class="panorama">
           <a class="panorama__image" href="#">
-            <img src="img/panorama-desktop@1x.jpg" width="100%" alt="Панорама дня">
+            <img src="img/panorama-desktop@1x.jpg" alt="Панорама дня">
             <span class="panorama__sticker">Панорама дня</span>
           </a>
           <div class="panorama__wrapper">
             <div class="panorama__body">
-              <p class="panorama__author">Анна <span class="post__date"><time datetime="2019-07-14">(5 минут назад)</time></span></p>
+              <p class="panorama__author">Анна <span class="panorama__date"><time datetime="2019-07-14">(5 минут назад)</time></span></p>
               <p class="panorama__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-              <button class="panorama__like">Нравится: 215</buttonn>
+              <button class="panorama__like">Нравится: 215</button>
             </div>
           </div>
         </article>
@@ -61,7 +61,7 @@
           <div class="post-list">
             <article class="post">
               <a class="post__image" href="#">
-                <img src="img/photo-car-desktop@1x.jpg" width="100%" alt="Фото поста">
+                <img src="img/photo-car-desktop@1x.jpg" alt="Фото поста">
               </a>
               <div class="post__body">
                   <p class="post__author">Левон <span class="post__date"><time datetime="2019-07-14">(5 часов назад)</time></span></p>
@@ -71,7 +71,7 @@
             </article>
             <article class="post">
               <a class="post__image" href="#">
-                <img src="img/photo-drumset-desktop@1x.jpg" width="100%" alt="Фото поста">
+                <img src="img/photo-drumset-desktop@1x.jpg" alt="Фото поста">
               </a>
               <div class="post__body">
                   <p class="post__author">Антон <span class="post__date"><time datetime="2019-07-14">(12 часов назад)</time></span></p>
@@ -81,7 +81,7 @@
             </article>
             <article class="post">
               <a class="post__image" href="#">
-                <img src="img/photo-window-desktop@1x.jpg" width="100%" alt="Фото поста">
+                <img src="img/photo-window-desktop@1x.jpg" alt="Фото поста">
               </a>
               <div class="post__body">
                   <p class="post__author">Борис <span class="post__date"><time datetime="2019-07-14">(12 часов назад)</time></span></p>
@@ -91,7 +91,7 @@
             </article>
             <article class="post">
               <a class="post__image" href="#">
-                <img src="img/photo-fair-desktop@1x.jpg" width="100%" alt="Фото поста">
+                <img src="img/photo-fair-desktop@1x.jpg" alt="Фото поста">
               </a>
               <div class="post__body">
                   <p class="post__author">Сергей <span class="post__date"><time datetime="2019-07-14">(25 часов назад)</time></span></p>
@@ -101,7 +101,7 @@
             </article>
             <article class="post">
               <a class="post__image" href="#">
-                <img src="img/photo-pov-desktop@1x.jpg" width="100%" alt="Фото поста">
+                <img src="img/photo-pov-desktop@1x.jpg" alt="Фото поста">
               </a>
               <div class="post__body">
                   <p class="post__author">Максим <span class="post__date"><time datetime="2019-07-14">(40 часов назад)</time></span></p>
@@ -111,7 +111,7 @@
             </article>
             <article class="post">
               <a class="post__image" href="#">
-                <img src="img/photo-wing-desktop@1x.jpg" width="100%" alt="Фото поста">
+                <img src="img/photo-wing-desktop@1x.jpg" alt="Фото поста">
               </a>
               <div class="post__body">
                   <p class="post__author">Надежда <span class="post__date"><time datetime="2019-07-14">(45 часов назад)</time></span></p>
@@ -124,28 +124,63 @@
 
       </section>
 
-      <!--<section class="photo-upload">
-        <h2 class="photo-upload__title photo-upload__title--hidden">Загрузить своё фото</h2>
-        <p class="photo-upload__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
-        <div class="photo-editor">
-          <form class="photo-editor__form" method="post" action="http://echo.htmlacademy.ru">
-            <img class="photo-editor__image" src="img/photo-road-ddesktop@1x.jpg" width="100%" alt="Загруженное фото">
-            <ul class="photo-editor__tools">
-              <li class="photo-editor__tool photo-editor__tool--crop">
-                <img src="img/icon-editor-crop.svg" width="45" height="45" alt="Обрезать фото">
-              </li>
-              <li class="photo-editor__tool photo-editor__tool--fill">
-                <img src="img/icon-editor-fill.svg" width="45" height="45" alt="Поменять цвето фото">
-              </li>
-              <li class="photo-editor__tool photo-editor__tool--contrast">
-                <img src="img/icon-editor-contrast.svg" width="45" height="45" alt="Поменять контраст фото">
-              </li>
-            </ul>
-            <button class="photo-editor__upload-button button" type="submit">Запостить фото</button>
-            <button class="photo-editor__cancel-button button" type="submit">Отмена</button>
-          </form>
+      <section class="upload">
+        <h2 class="upload__title upload__title--hidden">Загрузить своё фото</h2>
+
+        <p class="upload__text">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
+
+        <div class="upload__editor editor">
+          <div class="editor__wrapper">
+            <form class="editor__form" method="post" action="http://echo.htmlacademy.ru">
+                <figure class="editor__image">
+                    <img src="img/photo-road-desktop@1x.jpg" alt="Загруженное фото">
+                </figure>
+                <div class="editor__fields">
+                  <div class="editor__wrapper-tools">
+                    <ul class="editor__tools">
+                      <li class="editor__tool">
+                        <div class="editor__icon">
+                          <img src="img/icon-editor-crop.svg" width="45" height="45" alt="Обрезать фото">
+                        </div>
+                        <div class="editor__control">
+                          <div class="editor__range">
+                            <div class="editor__scale"></div>
+                            <div class="editor__button-control"></div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="editor__tool">
+                        <div class="editor__icon">
+                          <img src="img/icon-editor-fill.svg" width="45" height="45" alt="Обрезать фото">
+                        </div>
+                      </li>
+                      <li class="editor__tool">
+                        <div class="editor__icon">
+                          <img src="img/icon-editor-contrast.svg" width="45" height="45" alt="Обрезать фото">
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="editor__buttons">
+                    <div class="editor__wraper-buttons">
+                      <button class="button editor__button editor__button--upload" type="submit">Запостить</button>
+                      <button class="button editor__button editor__button--cancel" type="submit">Отмена</button>
+                    </div>
+                  </div>
+                </div>
+                <!--
+                <div class="editor__control">
+                  <div class="editor__scale"></div>
+                  <div class="editor__button-control"></div>
+                </div>
+                <button class="editor__upload-button button" type="submit">Запостить</button>
+                <button class="editor__cancel-button button" type="submit">Отмена</button>
+              </div>-->
+            </form>
+          </div>
         </div>
-      </section>-->
+      </section>
+
 
     </main>
 

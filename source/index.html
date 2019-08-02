@@ -92,13 +92,16 @@
 
       </section>
 
-      <!--<section class="reviews">
+      <section class="reviews">
         <div class="reviews__wrapper slider">
-          <h2 class="reviews__title">Отзывы о приложении</h2>
+          <h2 class="reviews__title reviews__title--hidden">Отзывы о приложении</h2>
 
           <ul class="reviews__list">
             <li class="reviews__item">
-              <h3 class="reviews__name">Николай Петров</h3>
+              <div class="reviews__user">
+                <h3 class="reviews__user-name">Николай Петров</h3>
+                <p class="reviews__user-info">25 лет, водитель трамвая</p>
+              </div>
               <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
             </li>
           </ul>
@@ -118,7 +121,7 @@
 
           <h2 class="tariffs__title tariffs__title--hidden">Тарифы</h2>
 
-          <table class="tariffs__table">
+          <table class="tariffs__table"><!--С тобой я еще разберусь!-->
             <tbody>
               <tr class="tariffs__table-header">
                 <th class="tariffs__header">
@@ -163,29 +166,33 @@
       </section>
 
       <section class="contacts">
+        <div class="contacts__wrapper">
 
-        <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
+          <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
 
-        <div class="contacts__items">
-          <div class="contacts__item">
-            <h3 class="contacts__item-lead">Звоните:</h3>
-            <a class="contacts__item-info" href="tel:+78125556666">+7 (812) 555-66-66</a>
+          <div class="contacts__items">
+            <div class="contacts__item">
+              <h3 class="contacts__item-lead">Звоните:</h3>
+              <a class="contacts__item-info" href="tel:+78125556666">+7 (812) 555-66-66</a>
+            </div>
+            <div class="contacts__item">
+              <h3 class="contacts__item-lead">Пишите:</h3>
+              <a class="contacts__item-info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </div>
+            <div class="contacts__item">
+              <h3 class="contacts__item-lead">Приезжайте в гости:</h3>
+              <address class="contacts__item-info">ул. Большая Конюшенная, 19/8</address>
+            </div>
           </div>
-          <div class="contacts__item">
-            <h3 class="contacts__item-lead">Пишите:</h3>
-            <a class="contacts__item-info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </div>
-          <div class="contacts__item">
-            <h3 class="contacts__item-lead">Приезжайте в гости:</h3>
-            <address class="contacts__item-info">ул. Большая Конюшенная, 19/8</address>
-          </div>
+
         </div>
+
 
         <div class="contacts__map">
           <img  src="http://placehold.it/1280x225" width="1280" height="225" alt="Карта">
         </div>
 
-      </section>-->
+      </section>
     </main>
 
     <footer class="page-footer page-footer--index">
