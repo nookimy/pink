@@ -4,141 +4,140 @@
   padding-left: 0;
   padding-right: 0;
   margin-bottom: 20px;
+}
 
-  &__image {
-    display: block;
-    height: 137px;
-    overflow: hidden;
+.panorama__image {
+  display: block;
+  height: 137px;
+  overflow: hidden;
+}
+
+.panorama__sticker {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #d22856;
+  text-transform: uppercase;
+  padding: 5px 20px;
+}
+
+.panorama__wrapper {
+  .container;
+}
+
+.panorama__body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding-top: 18px;
+  padding-bottom: 20px;
+  padding-right: 10px;
+  padding-left: 17px;
+  background-color: @grey-light;
+}
+
+.panorama__author {
+  font-weight: 700;
+  margin: 0;
+}
+
+.panorama__date {
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.panorama__text {
+  flex-grow: 1;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.panorama__like {
+  .button-reset;
+  position: relative;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: @pink;
+  padding-left: 32px;
+
+  &:hover {
+    text-decoration: underline;
   }
 
-  &__sticker {
+  &::before {
+    content: "";
     position: absolute;
-    top: 0;
-    right: 20px;
-    font-size: 12px;
-    line-height: 24px;
-    font-weight: 700;
-    color: #ffffff;
-    background-color: #d22856;
-    text-transform: uppercase;
-    padding: 5px 20px;
-  }
-
-  &__wrapper {
-    .container;
-  }
-
-  &__body {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    padding-top: 18px;
-    padding-bottom: 20px;
-    padding-right: 10px;
-    padding-left: 17px;
-    background-color: @grey-light;
-  }
-
-  &__author {
-    font-weight: 700;
-    margin: 0;
-  }
-
-  &__date {
-    font-size: 12px;
-    line-height: 12px;
-    text-transform: uppercase;
-    font-weight: 300;
-  }
-
-  &__text {
-    flex-grow: 1;
-    margin: 0;
-    margin-bottom: 10px;
-  }
-
-  &__like {
-    .button-reset;
-    position: relative;
-    font-size: 12px;
-    line-height: 24px;
-    text-transform: uppercase;
-    color: @pink;
-    padding-left: 32px;
-
-    &:hover {
-      text-decoration: underline;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 8px;
-      left: 1px;
-      width: 12px;
-      height: 12px;
-      background-image: url("../img/icon-heart.svg");
-    }
+    top: 8px;
+    left: 1px;
+    width: 12px;
+    height: 12px;
+    background-image: url("../img/icon-heart.svg");
   }
 }
+
 
 @media (min-width: @tablets-width) {
   .panorama {
     margin-bottom: 51px;
+  }
 
-    &__image {
-      height: 509px;
-      overflow: hidden;
-    }
+  .panorama__image {
+    height: 509px;
+    overflow: hidden;
+  }
 
-    &__sticker {
-      top: 58px;
-      right: 3px;
-    }
+  .panorama__sticker {
+    top: 58px;
+    right: 3px;
+  }
 
-    &__body {
-      flex-direction: row;
-      flex-wrap: wrap;
-      padding-top: 23px;
-      padding-bottom: 25px;
-      padding-right: 18px;
-      padding-left: 28px;
-    }
+  .panorama__body {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 23px;
+    padding-bottom: 25px;
+    padding-right: 18px;
+    padding-left: 28px;
+  }
 
-    &__author {
-      order: 1;
-      flex-grow: 1;
-      margin-right: 20px;
-    }
+  .panorama__author {
+    order: 1;
+    flex-grow: 1;
+    margin-right: 20px;
+  }
 
-    &__text {
-      order: 3;
-      margin-bottom: 0;
-    }
+  .panorama__text {
+    order: 3;
+    margin-bottom: 0;
+  }
 
-    &__like {
-      order: 2;
-      padding-left: 0;
-      padding-right: 40px;
+  .panorama__like {
+    order: 2;
+    padding-left: 0;
+    padding-right: 40px;
 
-      &::before {
-        left: 106px;
-        top: 7px;
-      }
+    &::before {
+      left: 106px;
+      top: 7px;
     }
   }
 }
 
 @media (min-width: @desktops-width) {
-  .panorama {
-    &__image {
-      height: 506px;
-      overflow: hidden;
-    }
+  .panorama__image {
+    height: 506px;
+    overflow: hidden;
+  }
 
-    &__sticker {
-      top: 55px;
-      right: 288px;
-    }
+  .panorama__sticker {
+    top: 55px;
+    right: 288px;
   }
 }

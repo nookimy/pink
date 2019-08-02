@@ -1,40 +1,42 @@
 .application {
   padding-top: 45px;
+}
 
-  &__title {
-    &--hidden {
-      .visually-hidden;
-    }
-  }
-
-  &__intro {
-    .container;
-    margin-bottom: 48px;
-    font-size: 14px;
-    line-height: 30px;
-    text-align: center;
-  }
-
-  &__wrapper {
-    .container;
+.application__title {
+  &--hidden {
+    .visually-hidden;
   }
 }
 
+.application__intro {
+  .container;
+  margin-bottom: 48px;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.application__wrapper {
+  .container;
+}
+
+
+
 @media (max-width: 659px) {
   .application {
-    &__wrapper {
-      width: 100%;
-      padding: 0;
-    }
-
     &--hidden {
       .visually-hidden;
     }
+  }
 
-    &__intro {
-      &--hidden {
-        .visually-hidden;
-      }
+  .application__wrapper {
+    width: 100%;
+    padding: 0;
+  }
+
+  .application__intro {
+    &--hidden {
+      .visually-hidden;
     }
   }
 }
@@ -42,12 +44,12 @@
 @media (min-width: @tablets-width) {
   .application {
     padding-top: 90px;
+  }
 
-    &__intro {
-      font-size: 18px;
-      line-height: 30px;
-      padding-left: 60px;
-      padding-right: 60px;
-    }
+  .application__intro {
+    font-size: 18px;
+    line-height: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 }
