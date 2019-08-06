@@ -96,17 +96,17 @@
         <div class="reviews__wrapper slider">
           <h2 class="reviews__title reviews__title--hidden">Отзывы о приложении</h2>
 
-          <ul class="reviews__list">
-            <li class="reviews__item">
+          <div class="reviews__list">
+            <div class="reviews__item">
               <div class="reviews__user">
                 <h3 class="reviews__user-name">Николай Петров</h3>
                 <p class="reviews__user-info">25 лет, водитель трамвая</p>
               </div>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            </li>
+            </div>
             <button class="reviews__arrow reviews__arrow--prev" type="button">Предыдущий</button>
             <button class="reviews__arrow reviews__arrow--next" type="button">Следующий</button>
-          </ul>
+          </div>
 
           <p class="reviews__toggles slider__toggles">
             <button class="slider__toggle" type="button">1</button>
@@ -200,13 +200,12 @@
                 </tr>
               </tbody>
             </table>
+            <p class="tariffs__toggles slider__toggles">
+              <button class="slider__toggle" type="button">1</button>
+              <button class="slider__toggle" type="button">2</button>
+              <button class="slider__toggle" type="button">3</button>
+            </p>
           </div>
-
-          <p class="tariffs__toggles slider__toggles">
-            <button class="slider__toggle" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
-          </p>
 
         </div>
 
@@ -218,15 +217,15 @@
           <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
 
           <div class="contacts__items">
-            <div class="contacts__item">
+            <div class="contacts__item contacts__item--phone">
               <h3 class="contacts__item-lead">Звоните:</h3>
               <a class="contacts__item-info" href="tel:+78125556666">+7 (812) 555-66-66</a>
             </div>
-            <div class="contacts__item">
+            <div class="contacts__item contacts__item--email">
               <h3 class="contacts__item-lead">Пишите:</h3>
               <a class="contacts__item-info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </div>
-            <div class="contacts__item">
+            <div class="contacts__item contacts__item--adress">
               <h3 class="contacts__item-lead">Приезжайте в гости:</h3>
               <address class="contacts__item-info">ул. Большая Конюшенная, 19/8</address>
             </div>
@@ -236,7 +235,9 @@
 
 
         <div class="contacts__map">
-          <img  src="http://placehold.it/1280x225" width="1280" height="225" alt="Карта">
+          <div class="contacts__map-wrapper">
+            <img  src="http://placehold.it/1280x225" width="1280" height="225" alt="Карта">
+          </div>
         </div>
 
       </section>

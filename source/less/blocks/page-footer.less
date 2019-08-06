@@ -4,6 +4,20 @@
       display: none;
     }
   }
+
+  .page-footer__wrapper {
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .page-footer__logo {
+    display: block;
+    margin-bottom: 35px;
+  }
+
+  .page-footer__social {
+    margin-bottom: 35px;
+  }
 }
 
 @media (min-width: @tablets-width) {
@@ -16,12 +30,16 @@
   }
 
   .page-footer__logo {
-    display: block;
     height: 40px;
-    margin-bottom: 35px;
   }
 
-  .page-footer__social {
-    margin-bottom: 34px;
+  .page-footer__copyright {
+    margin-top: 16px;
+  }
+}
+
+@media (min-width: @desktops-width) {
+  .page-footer__wrapper {
+    padding: 70px 10px 68px;
   }
 }
