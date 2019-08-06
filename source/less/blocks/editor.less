@@ -32,8 +32,6 @@
   position: relative;
   display: inline-block;
   vertical-align: top;
-  /*margin-right: 16px;*/
-  /*margin-left: 16px;*/
   width: 48px;
   height: 50px;
 }
@@ -84,13 +82,9 @@
   transform: translateX(-50%);
   border: 2px solid #d22856;
   border-radius: 83%;
-  background-color: #fff;
+  background-color: @white;
   cursor: pointer;
   outline: none;
-
-  &--crop {
-
-  }
 
   &:active,
   &:focus {
@@ -216,12 +210,10 @@
   .editor__image {
     width: 300px;
     padding-top: 57px;
-    /*padding-bottom: 54px;*/
   }
 
   .editor__fields {
     padding-top: 40px;
-    /*padding-bottom: 54px;*/
     padding-bottom: 0;
     margin-left: 45px;
     width: 275px;
@@ -249,7 +241,6 @@
     margin-left: 3px;
     width: 24px;
     height: 24px;
-    /*flex-shrink: 0;*/
   }
 
   .editor__icon-image {
@@ -363,7 +354,6 @@
     padding-left: 44px;
 
     &--contrast {
-      padding-top: 13px;
       padding-top: 11px;
     }
   }
