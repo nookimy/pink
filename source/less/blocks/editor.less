@@ -41,7 +41,17 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  fill: rgba(@blue-dark, 0.3);
 
+  &:hover {
+    cursor: pointer;
+    fill: rgba(@blue-dark, 0.5);
+  }
+
+  &:active {
+    cursor: pointer;
+    fill: @pink;
+  }
 
   &--crop {
     width: 48px;
@@ -81,7 +91,7 @@
   bottom: 0;
   transform: translateX(-50%);
   border: 2px solid #d22856;
-  border-radius: 83%;
+  border-radius: 50%;
   background-color: @white;
   cursor: pointer;
   outline: none;
@@ -90,11 +100,15 @@
   &:focus {
     background-color: @pink;
   }
+
+  &--crop {
+    left: 83%;
+  }
 }
 
 .editor__buttons {
   position: relative;
-  padding-top: 64px;
+  padding-top: 39px;
 }
 
 .editor__button {
@@ -125,13 +139,12 @@
     opacity: 0.1;
 
     &:hover,
-    &active {
+    &:active {
       opacity: 0.3;
     }
 
     &:active {
       background-color: @blue-dark;
-      color: @white;
     }
 
     &:not(:last-child) {
@@ -233,7 +246,7 @@
     align-items: center;
     box-shadow: inset 0 -1px @grey-darker;
     padding-top: 25px;
-    padding-bottom: 24px;
+    padding-bottom: 23px;
   }
 
   .editor__icon {
@@ -276,6 +289,7 @@
     flex-direction: column;
     padding-left: 2px;
     padding-right: 13px;
+    padding-bottom: 6px;
   }
 
   .editor__button {
@@ -302,6 +316,7 @@
 @media (min-width: @desktops-width) {
   .editor {
     background-color: transparent;
+    padding-bottom: 26px;
   }
 
   .editor__form {
@@ -351,7 +366,7 @@
     padding-top: 14px;
     padding-right: 30px;
     padding-bottom: 10px;
-    padding-left: 44px;
+    padding-left: 50px;
 
     &--contrast {
       padding-top: 11px;
@@ -376,6 +391,10 @@
     flex-direction: row;
     padding: 0;
     width: 100%;
+  }
+
+  .editor__buttons {
+    padding-bottom: 5px;
   }
 
   .editor__button {

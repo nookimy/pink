@@ -1,5 +1,5 @@
 .reviews {
-  padding-top: 45px;
+  padding-top: 47px;
   padding-bottom: 35px;
 }
 
@@ -36,11 +36,23 @@
 
 .reviews__text {
   margin: 0;
-  margin-top: 17px;
+  margin-top: 16px;
 }
 
 .reviews__arrow {
   display: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}
+
+.reviews__toggles {
+  margin-top: 26px;
 }
 
 @media (max-width: @phones-max-width) {
@@ -52,7 +64,7 @@
 @media (min-width: @tablets-width) {
   .reviews {
     padding-top: 100px;
-    padding-bottom: 16px;
+    padding-bottom: 13px;
   }
 
   .reviews__user {
@@ -70,13 +82,17 @@
     font-size: 20px;
     line-height: 30px;
   }
+
+  .reviews__toggles {
+    margin-top: 29px;
+  }
 }
 
 @media (min-width: @desktops-width) {
   .reviews {
     position: relative;
     padding-top: 185px;
-    padding-bottom: 50px;
+    padding-bottom: 18px;
 
     &::before {
       content: "";

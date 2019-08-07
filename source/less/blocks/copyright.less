@@ -1,6 +1,14 @@
 .copyright__link {
   display: inline-block;
   text-decoration: none;
+
+  &:hover .copyright__image {
+    fill: @blue-dark;
+  }
+
+  &:active .copyright__image {
+    opacity: 0.3;
+  }
 }
 
 .copyright__text {
@@ -13,6 +21,7 @@
 
 .copyright__image {
   margin-left: 15px;
+  fill: @pink;
 }
 
 @media (min-width: @tablets-width) {
