@@ -5,6 +5,36 @@
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <!-- Pixel Glass -->
+        <style>
+          HTML {
+            background-repeat: no-repeat;
+            background-position:  50% 0;
+            /* По умолчанию мобильный макет */
+            background-image: url( "pp/img/pink-index-mobile.jpg" );
+          }
+          /* Планшет */
+          @media ( min-width: 660px ) {
+            HTML {
+              /* Планшетный макет */
+              background-image: url( "pp/img/pink-index-tablet.jpg" );
+            }
+          }
+          /* Десктоп */
+          @media ( min-width: 960px ) {
+            HTML {
+              /* Десктопный макет */
+              background-image: url( "pp/img/pink-index-desktop.jpg" );
+            }
+          }
+
+          BODY {
+            opacity: .5;
+          }
+        </style>
+        <link rel="stylesheet" href="pp/pp-style.css">
+        <script src="pp/pp-script.js"></script>
+    <!-- // Pixel Glass -->
   </head>
   <body>
 
