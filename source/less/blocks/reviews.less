@@ -1,5 +1,5 @@
 .reviews {
-  padding-top: 45px;
+  padding-top: 47px;
   padding-bottom: 35px;
 }
 
@@ -11,13 +11,15 @@
   .visually-hidden;
 }
 
-.reviews__list {
-  .reset-list;
-}
-
 .reviews__item {
   text-align: center;
   line-height: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.reviews__item:not(:first-child) {
+  display: none;
 }
 
 .reviews__user-name {
@@ -33,10 +35,27 @@
 }
 
 .reviews__text {
-  margin-top: 14px;
+  margin: 0;
+  margin-top: 16px;
 }
 
-@media (max-width: 659px) {
+.reviews__arrow {
+  display: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}
+
+.reviews__toggles {
+  margin-top: 26px;
+}
+
+@media (max-width: @phones-max-width) {
   .reviews__user-info {
     .visually-hidden;
   }
@@ -45,11 +64,91 @@
 @media (min-width: @tablets-width) {
   .reviews {
     padding-top: 100px;
-    padding-bottom: 16px;
+    padding-bottom: 13px;
+  }
+
+  .reviews__user {
+    order: 2;
+  }
+
+  .reviews__text {
+    order: 1;
+    margin-top: 0;
+    margin-bottom: 35px;
+    font-size: 18px;
+  }
+
+  .reviews__user-name {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .reviews__toggles {
+    margin-top: 29px;
   }
 }
 
 @media (min-width: @desktops-width) {
+  .reviews {
+    position: relative;
+    padding-top: 185px;
+    padding-bottom: 48px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 71px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 77px;
+      height: 64px;
+      background: url("../img/icon-quotes.svg") no-repeat top left;
+      background-size: 77px 64px;
+    }
+  }
+
+  .reviews__list {
+    position: relative;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .reviews__user-name {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .reviews__user-info {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .reviews__arrow {
+    display: block;
+    position: absolute;
+    top: 28px;
+    width: 22px;
+    border: 0;
+    padding: 0;
+    height: 41px;
+    background-size: 22px 41px;
+    text-indent: -1000px;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0.3;
+    outline: 0;
+
+    &--prev {
+      left: 0;
+      background: url("../img/icon-review-arrow-left.svg") no-repeat top left;
+    }
+
+    &--next {
+      right: 0;
+      background: url("../img/icon-review-arrow-right.svg") no-repeat top left;
+    }
+  }
+
   .reviews__toggles {
     display: none;
   }

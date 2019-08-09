@@ -1,5 +1,5 @@
 .upload {
-  padding-top: 20px;
+  padding-top: 25px;
 }
 
 .upload__title {
@@ -10,11 +10,33 @@
 
 .upload__text {
   .container;
+  line-height: 30px;
   text-align: center;
   margin-bottom: 40px;
 }
 
-.upload__editor {
-  padding-top: 20px;
-  padding-bottom: 40px;
+@media (min-width: @tablets-width) {
+  .upload {
+    padding-top: 45px;
+  }
+
+  .upload__text {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 70px;
+  }
+}
+
+@media (min-width: @desktops-width) {
+  .upload {
+    padding-top: 5px;
+  }
+
+  .upload__text {
+    margin-bottom: 65px;
+  }
+
+  .upload__editor {
+    padding-bottom: 51px;
+  }
 }
