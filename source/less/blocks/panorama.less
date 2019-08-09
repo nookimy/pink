@@ -8,8 +8,14 @@
 
 .panorama__image {
   display: block;
-  height: 137px;
+  position: relative;
   overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.panorama__img {
+  display: block;
 }
 
 .panorama__sticker {
@@ -75,14 +81,21 @@
   &::before {
     content: "";
     position: absolute;
-    top: 8px;
+    top: 7px;
     left: 1px;
-    width: 12px;
+    width: 13px;
     height: 12px;
     background-image: url("../img/icon-heart.svg");
   }
 }
 
+@media (max-width: @phones-max-width) {
+  .panorama__image {
+    .container;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 
 @media (min-width: @tablets-width) {
   .panorama {
@@ -90,8 +103,15 @@
   }
 
   .panorama__image {
-    height: 509px;
     overflow: hidden;
+  }
+
+  .panorama__img {
+    position: relative;
+    width: auto;
+    max-width: inherit;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .panorama__sticker {
@@ -133,7 +153,6 @@
 
 @media (min-width: @desktops-width) {
   .panorama__image {
-    height: 506px;
     overflow: hidden;
   }
 
