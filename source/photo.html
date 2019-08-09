@@ -76,7 +76,11 @@
 
         <article class="panorama">
           <a class="panorama__image" href="#">
-            <img src="img/panorama-desktop@1x.jpg" alt="Панорама дня">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg, img/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg, img/panorama-tablet@2x.jpg 2x">
+              <img src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама дня">
+            </picture>
             <span class="panorama__sticker">Панорама дня</span>
           </a>
           <div class="panorama__wrapper">
@@ -92,7 +96,11 @@
           <div class="post-list">
             <article class="post">
               <a class="post__image" href="#">
-                <img src="img/photo-car-desktop@1x.jpg" alt="Фото поста">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg, img/photo-car-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg, img/photo-car-tablet@2x.jpg 2x">
+                  <img src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фото поста">
+                </picture>
               </a>
               <div class="post__body">
                   <p class="post__author">Левон <span class="post__date"><time datetime="2019-07-14">(5 часов назад)</time></span></p>
@@ -102,7 +110,11 @@
             </article>
             <article class="post">
               <a class="post__image" href="#">
-                <img src="img/photo-drumset-desktop@1x.jpg" alt="Фото поста">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg, img/photo-drumset-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg, img/photo-drumset-tablet@2x.jpg 2x">
+                  <img src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фото поста">
+                </picture>
               </a>
               <div class="post__body">
                   <p class="post__author">Антон <span class="post__date"><time datetime="2019-07-14">(12 часов назад)</time></span></p>
@@ -112,7 +124,11 @@
             </article>
             <article class="post">
               <a class="post__image" href="#">
-                <img src="img/photo-window-desktop@1x.jpg" alt="Фото поста">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg, img/photo-window-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg, img/photo-window-tablet@2x.jpg 2x">
+                  <img src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фото поста">
+                </picture>
               </a>
               <div class="post__body">
                   <p class="post__author">Борис <span class="post__date"><time datetime="2019-07-14">(12 часов назад)</time></span></p>
@@ -122,7 +138,11 @@
             </article>
             <article class="post">
               <a class="post__image" href="#">
-                <img src="img/photo-fair-desktop@1x.jpg" alt="Фото поста">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg, img/photo-fair-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg, img/photo-fair-tablet@2x.jpg 2x">
+                  <img src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Фото поста">
+                </picture>
               </a>
               <div class="post__body">
                   <p class="post__author">Сергей <span class="post__date"><time datetime="2019-07-14">(25 часов назад)</time></span></p>
@@ -132,7 +152,11 @@
             </article>
             <article class="post">
               <a class="post__image" href="#">
-                <img src="img/photo-pov-desktop@1x.jpg" alt="Фото поста">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg, img/photo-pov-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg, img/photo-pov-tablet@2x.jpg 2x">
+                  <img src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Фото поста">
+                </picture>
               </a>
               <div class="post__body">
                   <p class="post__author">Максим <span class="post__date"><time datetime="2019-07-14">(40 часов назад)</time></span></p>
@@ -142,7 +166,11 @@
             </article>
             <article class="post">
               <a class="post__image" href="#">
-                <img src="img/photo-wing-desktop@1x.jpg" alt="Фото поста">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg, img/photo-wing-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg, img/photo-wing-tablet@2x.jpg 2x">
+                  <img src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Фото поста">
+                </picture>
               </a>
               <div class="post__body">
                   <p class="post__author">Надежда <span class="post__date"><time datetime="2019-07-14">(45 часов назад)</time></span></p>
@@ -164,7 +192,11 @@
           <div class="editor__wrapper">
             <form class="editor__form" method="post" action="http://echo.htmlacademy.ru">
                 <figure class="editor__image">
-                    <img src="img/photo-road-desktop@1x.jpg" alt="Загруженное фото">
+                  <picture>
+                    <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg, img/photo-road-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg, img/photo-road-tablet@2x.jpg 2x">
+                    <img src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Загруженное фото">
+                  </picture>
                 </figure>
                 <div class="editor__fields">
                   <div class="editor__wrapper-tools">
