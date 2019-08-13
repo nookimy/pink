@@ -72,7 +72,11 @@
   background: rgba(@pink, 0.3);
 }
 
-@media (max-width: 959px) {
+.main-nav--opened .main-nav__list {
+  /*margin-top: 4px;*/
+}
+
+@media (max-width: @tablets-max-width) {
   .main-nav--closed .main-nav__list {
     display: none;
   }
@@ -97,6 +101,10 @@
       right: 0;
     }
   }
+
+  .main-nav--opened .main-nav__list {
+    /*margin-top: 0;*/
+  }
 }
 
 @media (min-width: @desktops-width) {
@@ -105,6 +113,7 @@
     margin-left: auto;
     padding-top: 28px;
     padding-bottom: 28px;
+    flex-shrink: 1;
   }
 
 
