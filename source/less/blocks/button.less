@@ -26,6 +26,30 @@
       color: rgba(@pink, 0.3);
     }
   }
+
+  &--popup, {
+    padding: 17px 30px 16px;
+    border-radius: 3px;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: @white;
+    background-color: @green;
+
+    &:hover,
+    &:focus {
+      background-color: @green-darker;
+    }
+
+    &:active {
+      color: rgba(@white, 0.3);
+    }
+
+    &:disabled {
+      background-color: @grey;
+      cursor: default;
+    }
+  }
 }
 
 @media (min-width: @desktops-width) {
