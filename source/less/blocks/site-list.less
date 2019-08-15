@@ -58,23 +58,23 @@
     padding: 10px 0 5px;
   }
 
-  .site-list__item:last-child a {
-    box-shadow: none;
-  }
-
   .site-list__item {
     &--current {
       position: relative;
 
       &:after {
-      content: "";
-      position: absolute;
-      right: 0;
-      bottom: -2px;
-      left: 0;
-      height: 2px;
-      background: @white;
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: -2px;
+        left: 0;
+        height: 2px;
+        background: @white;
       }
+    }
+
+    &:last-child a {
+      box-shadow: none;
     }
   }
 }
