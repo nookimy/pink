@@ -101,12 +101,12 @@ gulp.task("server", function () {
 
 gulp.task("build", gulp.series(
   "clean",
-   "copy",
-   "css",
-   "sprite",
-   "html",
-   "images",
-   "webp"
+  "copy",
+  "css",
+  "sprite",
+  "html",
+  "images",
+  "webp"
 ));
 
 gulp.task("start", gulp.series("build", "server"));
