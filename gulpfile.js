@@ -61,7 +61,7 @@ gulp.task("images", function () {
 gulp.task("webp", function () {
   return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(webp({quality: 90}))
-    .pipe(gulp.dest("source/img"));
+    .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("copy", function () {
@@ -104,7 +104,9 @@ gulp.task("build", gulp.series(
    "copy",
    "css",
    "sprite",
-   "html"
+   "html",
+   "images",
+   "webp"
 ));
 
 gulp.task("start", gulp.series("build", "server"));
