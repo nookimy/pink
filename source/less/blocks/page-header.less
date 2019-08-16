@@ -3,7 +3,6 @@
   background-color: rgba(@black, 0.3);
   color: @white;
   width: 100%;
-  z-index: 1;
 
   &--full {
     position: relative;
@@ -17,35 +16,17 @@
   width: 100%;
 }
 
-.page-header__logo {
-  margin: 22px 20px 27px;
-  width: 75px;
-  height: 22px;
-}
-
-
-@media (min-width: @tablets-width) {
-  .page-header__logo {
-    margin-top: 27px;
-    margin-bottom: 43px;
-    width: 150px;
-    height: 40px;
-  }
-}
-
 @media (min-width: @desktops-width) {
   .page-header {
-    position: absolute;
-    background-color: rgba(@black, 0.3);
+    &--full {
+      position: absolute;
+      background-color: rgba(@black, 0.3);
+    }
   }
 
   .page-header__wrapper {
     flex-direction: row;
     width: 940px;
     margin: 0 auto;
-  }
-
-  .page-header__logo {
-    margin-left: 0;
   }
 }
