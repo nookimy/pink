@@ -1,5 +1,5 @@
-var navMain = document.querySelector('.main-nav');
-var navToggle = document.querySelector('.main-nav__toggle');
+var navMain = document.querySelector(".main-nav");
+var navToggle = document.querySelector(".main-nav__toggle");
 var pageHeader = document.querySelector(".page-header");
 var pageIntro = document.querySelector(".intro");
 
