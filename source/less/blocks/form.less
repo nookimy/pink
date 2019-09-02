@@ -171,7 +171,8 @@
     z-index: 1;
   }
 
-  &:hover::before {
+  &:hover::before,
+  &:hover::focus {
     border-color: @blue-dark;
   }
 
@@ -252,7 +253,8 @@
     border-radius: 50%;
   }
 
-  &:hover::before {
+  &:hover::before,
+  &:focus::before {
     border-color: @blue-dark;
   }
 
@@ -315,6 +317,10 @@
 
   &:active {
     color: rgba(@white, 0.3);
+  }
+
+  &:disabled {
+    background-color: @grey;
   }
 }
 

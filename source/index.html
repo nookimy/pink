@@ -5,6 +5,12 @@
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="/fonts/opensans.woff" as="font">
+    <link rel="preload" href="/fonts/opensans.woff2" as="font">
+    <link rel="preload" href="/fonts/opensansbold.woff" as="font">
+    <link rel="preload" href="/fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="/fonts/opensanslight.woff" as="font">
+    <link rel="preload" href="/fonts/opensanslight.woff2" as="font">
   </head>
   <body>
 
@@ -242,7 +248,10 @@
         </div>
 
           <div class="contacts__map-wrapper">
-            <div class="contacts-map"></div>
+            <div class="contacts-map">
+              <iframe class="contacts-map__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A0f5bb9cfe2c677bd5dd78dc3c00effa0c099da32a7dc7a6e700f590fe6aa2a43&amp;source=constructor" width="320" height="215" frameborder="0" allowfullscreen="true"></iframe>
+            </div>
+            </div>
           </div>
 
       </section>
@@ -257,13 +266,13 @@
 
         <div class="page-footer__social social">
           <h2 class="social__title social__title--hidden">Мы в соцсетях</h2>
-          <a class="social__link social__link--twitter" href="#">
+          <a class="social__link social__link--twitter" href="#" aria-label="Мы в Твиттере">
             <svg class="social__icon  social__icon--twitter" width="18" height="15"><use xlink:href="#sprite-icon-twitter"></use></svg>
           </a>
-          <a class="social__link social__link--facebook" href="#">
+          <a class="social__link social__link--facebook" href="#" aria-label="Мы в Фейсбуке">
             <svg class="social__icon  social__icon--facebook" width="9" height="19"><use xlink:href="#sprite-icon-facebook"></use></svg>
           </a>
-          <a class="social__link social__link--youtube" href="#">
+          <a class="social__link social__link--youtube" href="#" aria-label="Мы в Ютубе">
             <svg class="social__icon  social__icon--youtube"width="15" height="14"><use xlink:href="#sprite-icon-youtube"></use></svg>
           </a>
         </div>
